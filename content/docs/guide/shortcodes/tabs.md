@@ -5,7 +5,7 @@ next: /docs/guide/deploy-site
 
 ## Example
 
-{{< tabs >}}
+{{< tabs items="JSON,YAML,TOML" >}}
   {{< tab name="JSON" >}}**JSON**: JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax.{{< /tab >}}
   {{< tab name="YAML" >}}**YAML**: YAML is a human-readable data serialization language.{{< /tab >}}
   {{< tab name="TOML" >}}**TOML**: TOML aims to be a minimal configuration file format that's easy to read due to obvious semantics.{{< /tab >}}
@@ -41,7 +41,7 @@ Use `selected` property to specify the selected tab.
 
 The `YAML` tab will be selected by default.
 
-{{< tabs >}}
+{{< tabs items="JSON,YAML,TOML"  >}}
   {{< tab name="JSON" >}}**JSON**: JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax.{{< /tab >}}
   {{< tab name="YAML" selected=true >}}**YAML**: YAML is a human-readable data serialization language.{{< /tab >}}
   {{< tab name="TOML" >}}**TOML**: TOML aims to be a minimal configuration file format that's easy to read due to obvious semantics.{{< /tab >}}
@@ -66,7 +66,7 @@ Markdown syntax including code block is also supported:
 {{</* /tabs */>}}
 ````
 
-{{< tabs >}}
+{{< tabs items="JSON,YAML,TOML" >}}
 
   {{< tab name="JSON" >}}
   ```json
