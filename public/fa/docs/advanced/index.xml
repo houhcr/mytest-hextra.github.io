@@ -1,0 +1,539 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>هگزترا – مباحث پیشرفته</title>
+    <link>http://localhost:1313/fa/docs/advanced/</link>
+    <description>Recent content in مباحث پیشرفته on هگزترا</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fa</language>
+    
+	  <atom:link href="http://localhost:1313/fa/docs/advanced/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>چند زبانه</title>
+      <link>http://localhost:1313/fa/docs/advanced/multi-language/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/fa/docs/advanced/multi-language/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Hextra از ایجاد سایت با چندین زبان با استفاده از &lt;a href=&#34;https://gohugo.io/content-management/multilingual/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;حالت چندزبانه&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt; هوگو پشتیبانی می‌کند.&lt;/p&gt;
+&lt;h2&gt;فعال‌سازی چندزبانه&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;فعالسازی-چندزبانه&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%81%d8%b9%d8%a7%d9%84%d8%b3%d8%a7%d8%b2%db%8c-%da%86%d9%86%d8%af%d8%b2%d8%a8%d8%a7%d9%86%d9%87&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;برای چندزبانه کردن سایت، باید به هوگو زبان‌های پشتیبانی شده را اطلاع دهیم. باید به فایل پیکربندی سایت اضافه کنیم:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div class=&#34;hextra-code-filename not-prose&#34; dir=&#34;auto&#34;&gt;hugo.yaml&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;defaultContentLanguage&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;en&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;languages&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;en&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;languageName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;English&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;weight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;fr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;languageName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Français&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;weight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ja&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;languageName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;日本語&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;weight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;3&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;مدیریت ترجمه‌ها بر اساس نام فایل&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;مدیریت-ترجمهها-بر-اساس-نام-فایل&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%85%d8%af%db%8c%d8%b1%db%8c%d8%aa-%d8%aa%d8%b1%d8%ac%d9%85%d9%87%d9%87%d8%a7-%d8%a8%d8%b1-%d8%a7%d8%b3%d8%a7%d8%b3-%d9%86%d8%a7%d9%85-%d9%81%d8%a7%db%8c%d9%84&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;هوگو از مدیریت ترجمه‌ها بر اساس نام فایل پشتیبانی می‌کند. به عنوان مثال، اگر فایلی به نام &lt;code&gt;content/docs/_index.md&lt;/code&gt; به زبان انگلیسی داریم، می‌توانیم فایل &lt;code&gt;content/docs/_index.fr.md&lt;/code&gt; را برای ترجمه فرانسوی ایجاد کنیم.&lt;/p&gt;
+&lt;div class=&#34;hextra-filetree hx:mt-6 hx:select-none hx:text-sm hx:text-gray-800 hx:dark:text-gray-300 not-prose&#34;&gt;
+  &lt;div class=&#34;hx:inline-block hx:rounded-lg hx:px-4 hx:py-2 hx:border hx:border-gray-200 hx:dark:border-neutral-800&#34;&gt;
+  
+
+&lt;li class=&#34;hx:group hx:flex hx:list-none hx:flex-col&#34;&gt;
+  &lt;button class=&#34;hextra-filetree-folder hx:inline-flex hx:cursor-pointer hx:items-center hx:py-1 hx:hover:opacity-60&#34;&gt;
+    &lt;span data-state=&#34;open&#34; class=&#34;hx:data-[state=open]:hidden&#34;&gt;&lt;svg width=1em xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;span data-state=&#34;open&#34; class=&#34;hx:data-[state=closed]:hidden&#34;&gt;&lt;svg width=1em xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt;
+    &lt;span class=&#34;hx:ltr:ml-1 hx:rtl:mr-1&#34;&gt;content&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul data-state=&#34;open&#34; class=&#34;hx:ltr:pl-5 hx:rtl:pr-5 hx:data-[state=closed]:hidden&#34;&gt;
+  
+
+&lt;li class=&#34;hx:group hx:flex hx:list-none hx:flex-col&#34;&gt;
+&lt;button class=&#34;hextra-filetree-folder hx:inline-flex hx:cursor-pointer hx:items-center hx:py-1 hx:hover:opacity-60&#34;&gt;
+  &lt;span data-state=&#34;open&#34; class=&#34;hx:data-[state=open]:hidden&#34;&gt;&lt;svg width=1em xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt;
+  &lt;span data-state=&#34;open&#34; class=&#34;hx:data-[state=closed]:hidden&#34;&gt;&lt;svg width=1em xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt;
+  &lt;span class=&#34;hx:ltr:ml-1 hx:rtl:mr-1&#34;&gt;docs&lt;/span&gt;
+&lt;/button&gt;
+&lt;ul data-state=&#34;open&#34; class=&#34;hx:ltr:pl-5 hx:rtl:pr-5 hx:data-[state=closed]:hidden&#34;&gt;
+&lt;li class=&#34;hx:flex hx:list-none&#34;&gt;
+  &lt;span class=&#34;hx:inline-flex hx:cursor-default hx:items-center hx:py-1&#34;&gt;&lt;svg width=1em xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hx:ltr:ml-1 hx:rtl:mr-1&#34;&gt;_index.md&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li class=&#34;hx:flex hx:list-none&#34;&gt;
+  &lt;span class=&#34;hx:inline-flex hx:cursor-default hx:items-center hx:py-1&#34;&gt;&lt;svg width=1em xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hx:ltr:ml-1 hx:rtl:mr-1&#34;&gt;_index.fr.md&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li class=&#34;hx:flex hx:list-none&#34;&gt;
+  &lt;span class=&#34;hx:inline-flex hx:cursor-default hx:items-center hx:py-1&#34;&gt;&lt;svg width=1em xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z&#34;/&gt;&lt;/svg&gt;&lt;span class=&#34;hx:ltr:ml-1 hx:rtl:mr-1&#34;&gt;_index.ja.md&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;توجه: هوگو از &lt;a href=&#34;https://gohugo.io/content-management/multilingual/#translation-by-content-directory&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ترجمه بر اساس دایرکتوری محتوا&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt; نیز پشتیبانی می‌کند.&lt;/p&gt;
+&lt;h2&gt;ترجمه آیتم‌های منو&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ترجمه-آیتمهای-منو&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%aa%d8%b1%d8%ac%d9%85%d9%87-%d8%a2%db%8c%d8%aa%d9%85%d9%87%d8%a7%db%8c-%d9%85%d9%86%d9%88&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;برای ترجمه آیتم‌های منو در نوار ناوبری، باید فیلد &lt;code&gt;identifier&lt;/code&gt; را تنظیم کنیم:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div class=&#34;hextra-code-filename not-prose&#34; dir=&#34;auto&#34;&gt;hugo.yaml&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;menu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;identifier&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;documentation&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Documentation&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;pageRef&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;/docs&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;weight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;identifier&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;blog&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Blog&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;pageRef&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;/blog&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;weight&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;و آن‌ها را در فایل i18n مربوطه ترجمه کنیم:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div class=&#34;hextra-code-filename not-prose&#34; dir=&#34;auto&#34;&gt;i18n/fr.yaml&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;documentation&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Documentation&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;blog&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Blog&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;ترجمه رشته‌ها&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ترجمه-رشتهها&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%aa%d8%b1%d8%ac%d9%85%d9%87-%d8%b1%d8%b4%d8%aa%d9%87%d9%87%d8%a7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;برای ترجمه رشته‌ها در سایر قسمت‌ها، باید ترجمه را به فایل i18n مربوطه اضافه کنیم:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div class=&#34;hextra-code-filename not-prose&#34; dir=&#34;auto&#34;&gt;i18n/fr.yaml&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;readMore&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;Lire la suite&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;لیستی از رشته‌های استفاده شده در قالب را می‌توان در فایل &lt;code&gt;i18n/en.yaml&lt;/code&gt; یافت.&lt;/p&gt;
+&lt;h2&gt;مطالعه بیشتر&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;مطالعه-بیشتر&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%85%d8%b7%d8%a7%d9%84%d8%b9%d9%87-%d8%a8%db%8c%d8%b4%d8%aa%d8%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/content-management/multilingual/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;حالت چندزبانه هوگو&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.regisphilibert.com/blog/2018/08/hugo-multilingual-part-1-managing-content-translation/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;چندزبانه هوگو بخش 1: ترجمه محتوا&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.regisphilibert.com/blog/2018/08/hugo-multilingual-part-2-i18n-string-localization/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;چندزبانه هوگو بخش 2: بومی‌سازی رشته‌ها&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>سفارشی‌سازی Hextra</title>
+      <link>http://localhost:1313/fa/docs/advanced/customization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/fa/docs/advanced/customization/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Hextra برخی گزینه‌های پیش‌فرض سفارشی‌سازی را در فایل پیکربندی &lt;code&gt;hugo.yaml&lt;/code&gt; ارائه می‌دهد تا تم را پیکربندی کنید.
+این صفحه گزینه‌های موجود و نحوه سفارشی‌سازی بیشتر تم را توضیح می‌دهد.&lt;/p&gt;
+&lt;h2&gt;CSS سفارشی&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;css-سفارشی&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#css-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4%db%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;برای افزودن CSS سفارشی، باید یک فایل &lt;code&gt;assets/css/custom.css&lt;/code&gt; در سایت خود ایجاد کنیم. Hextra به طور خودکار این فایل را بارگذاری می‌کند.&lt;/p&gt;
+&lt;h3&gt;خانواده فونت&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;خانواده-فونت&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%ae%d8%a7%d9%86%d9%88%d8%a7%d8%af%d9%87-%d9%81%d9%88%d9%86%d8%aa&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;خانواده فونت محتوا را می‌توان با استفاده از موارد زیر سفارشی کرد:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div class=&#34;hextra-code-filename not-prose&#34; dir=&#34;auto&#34;&gt;assets/css/custom.css&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;content&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;font-family&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Times New Roman&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Times&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;serif&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;عنصر کد درون خطی&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;عنصر-کد-درون-خطی&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%b9%d9%86%d8%b5%d8%b1-%da%a9%d8%af-%d8%af%d8%b1%d9%88%d9%86-%d8%ae%d8%b7%db%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;رنگ متن مخلوط شده با &lt;code&gt;متن دیگر&lt;/code&gt; را می‌توان با موارد زیر سفارشی کرد:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div class=&#34;hextra-code-filename not-prose&#34; dir=&#34;auto&#34;&gt;assets/css/custom.css&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;content&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;code&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;not&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;code-block&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;code&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mh&#34;&gt;#c97c2e&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;رنگ اصلی&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;رنگ-اصلی&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%b1%d9%86%da%af-%d8%a7%d8%b5%d9%84%db%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;رنگ اصلی تم را می‌توان با تنظیم متغیرهای &lt;code&gt;--primary-hue&lt;/code&gt;، &lt;code&gt;--primary-saturation&lt;/code&gt; و &lt;code&gt;--primary-lightness&lt;/code&gt; سفارشی کرد:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div class=&#34;hextra-code-filename not-prose&#34; dir=&#34;auto&#34;&gt;assets/css/custom.css&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;root&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nv&#34;&gt;--primary-hue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;deg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nv&#34;&gt;--primary-saturation&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;90&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nv&#34;&gt;--primary-lightness&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;متغیرهای چیدمان کامپوننت&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;متغیرهای-چیدمان-کامپوننت&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%85%d8%aa%d8%ba%db%8c%d8%b1%d9%87%d8%a7%db%8c-%da%86%db%8c%d8%af%d9%85%d8%a7%d9%86-%da%a9%d8%a7%d9%85%d9%be%d9%88%d9%86%d9%86%d8%aa&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Hextra متغیرهای CSS را برای سفارشی‌سازی عرض صفحات، نوار ناوبری و پاورقی ارائه می‌دهد:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div class=&#34;hextra-code-filename not-prose&#34; dir=&#34;auto&#34;&gt;assets/css/custom.css&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;root&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;c&#34;&gt;/* عرض صفحه - همچنین از طریق params.page.width در hugo.yaml قابل پیکربندی است */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nv&#34;&gt;--hextra-max-page-width&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;rem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;/* پیش‌فرض: 80rem (نرمال)، 90rem (عریض)، 100% (کامل) */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;c&#34;&gt;/* عرض نوار ناوبری - همچنین از طریق params.navbar.width در hugo.yaml قابل پیکربندی است */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nv&#34;&gt;--hextra-max-navbar-width&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;90&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;rem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;/* عرض مستقل نوار ناوبری */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;c&#34;&gt;/* عرض پاورقی - همچنین از طریق params.footer.width در hugo.yaml قابل پیکربندی است */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nv&#34;&gt;--hextra-max-footer-width&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;rem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;/* عرض مستقل پاورقی */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;متغیرهای تم Tailwind&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;متغیرهای-تم-tailwind&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%85%d8%aa%d8%ba%db%8c%d8%b1%d9%87%d8%a7%db%8c-%d8%aa%d9%85-tailwind&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;با شروع از Hextra v0.10.0 که بر پایه Tailwind CSS v4 ساخته شده است، می‌توانید تم را با بازنویسی متغیرهای CSS در بلوک &lt;code&gt;@layer theme&lt;/code&gt; سفارشی کنید.&lt;/p&gt;
+&lt;p&gt;این به شما امکان می‌دهد ظاهر کلی را بدون نیاز به تغییر هر کلاس به صورت جداگانه سفارشی کنید.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div class=&#34;hextra-code-filename not-prose&#34; dir=&#34;auto&#34;&gt;assets/css/custom.css&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;layer&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;theme&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;root&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nv&#34;&gt;--hx-default-mono-font-family&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;JetBrains Mono&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;monospace&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;برای جزئیات بیشتر، &lt;a href=&#34;https://tailwindcss.com/docs/theme#default-theme-variable-reference&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;مستندات متغیرهای تم Tailwind&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt; را بررسی کنید.&lt;/p&gt;
+&lt;h3&gt;سفارشی‌سازی بیشتر تم&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;سفارشیسازی-بیشتر-تم&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%b3%d9%81%d8%a7%d8%b1%d8%b4%db%8c%d8%b3%d8%a7%d8%b2%db%8c-%d8%a8%db%8c%d8%b4%d8%aa%d8%b1-%d8%aa%d9%85&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;تم را می‌توان با بازنویسی استایل‌های پیش‌فرض از طریق کلاس‌های CSS در معرض، بیشتر سفارشی کرد. مثالی برای سفارشی‌سازی عنصر پاورقی:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div class=&#34;hextra-code-filename not-prose&#34; dir=&#34;auto&#34;&gt;assets/css/custom.css&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;hextra-footer&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;c&#34;&gt;/* استایل‌ها روی عنصر پاورقی اعمال می‌شوند */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;hextra-footer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;is&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;~=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;dark&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;c&#34;&gt;/* استایل‌ها روی عنصر پاورقی در حالت تاریک اعمال می‌شوند */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;از کلاس‌های زیر می‌توان برای سفارشی‌سازی بخش‌های مختلف تم استفاده کرد.&lt;/p&gt;
+&lt;h4&gt;عمومی&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;عمومی&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%b9%d9%85%d9%88%d9%85%db%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-scrollbar&lt;/code&gt; - عنصر نوار پیمایش&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;content&lt;/code&gt; - ظرف محتوای صفحه&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;شورتکدها&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;شورتکدها&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%b4%d9%88%d8%b1%d8%aa%da%a9%d8%af%d9%87%d8%a7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;h5&gt;نشان&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;نشان&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%86%d8%b4%d8%a7%d9%86&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-badge&lt;/code&gt; - عنصر نشان&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;کارت&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;کارت&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%da%a9%d8%a7%d8%b1%d8%aa&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-card&lt;/code&gt; - عنصر کارت&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-card-image&lt;/code&gt; - عنصر تصویر کارت&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-card-icon&lt;/code&gt; - عنصر آیکون کارت&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-card-subtitle&lt;/code&gt; - عنصر زیرنویس کارت&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;کارت‌ها&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;کارتها&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%da%a9%d8%a7%d8%b1%d8%aa%d9%87%d8%a7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-cards&lt;/code&gt; - ظرف شبکه‌ای کارت‌ها&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;نوت‌بوک Jupyter&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;نوتبوک-jupyter&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%86%d9%88%d8%aa%d8%a8%d9%88%da%a9-jupyter&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-jupyter-code-cell&lt;/code&gt; - ظرف سلول کد Jupyter&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-jupyter-code-cell-outputs-container&lt;/code&gt; - ظرف خروجی‌های سلول کد Jupyter&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-jupyter-code-cell-outputs&lt;/code&gt; - عنصر div خروجی سلول کد Jupyter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;PDF&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;pdf&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pdf&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-pdf&lt;/code&gt; - عنصر ظرف PDF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;مراحل&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;مراحل&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%85%d8%b1%d8%a7%d8%ad%d9%84&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-steps&lt;/code&gt; - ظرف مراحل&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;تب‌ها&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;تبها&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%aa%d8%a8%d9%87%d8%a7&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-tabs-panel&lt;/code&gt; - ظرف پنل تب‌ها&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-tabs-toggle&lt;/code&gt; - دکمه تغییر تب‌ها&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;درخت فایل&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;درخت-فایل&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%af%d8%b1%d8%ae%d8%aa-%d9%81%d8%a7%db%8c%d9%84&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-filetree&lt;/code&gt; - ظرف درخت فایل&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;پوشه&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;پوشه&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%be%d9%88%d8%b4%d9%87&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-filetree-folder&lt;/code&gt; - ظرف پوشه درخت فایل&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;نوار ناوبری&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;نوار-ناوبری&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%86%d9%88%d8%a7%d8%b1-%d9%86%d8%a7%d9%88%d8%a8%d8%b1%db%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-nav-container&lt;/code&gt; - ظرف نوار ناوبری&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-nav-container-blur&lt;/code&gt; - عنصر ظرف نوار ناوبری در حالت محو&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-hamburger-menu&lt;/code&gt; - دکمه منوی همبرگری&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;پاورقی&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;پاورقی&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%be%d8%a7%d9%88%d8%b1%d9%82%db%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-footer&lt;/code&gt; - عنصر پاورقی&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-custom-footer&lt;/code&gt; - ظرف بخش پاورقی سفارشی&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;جستجو&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;جستجو&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%ac%d8%b3%d8%aa%d8%ac%d9%88&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-search-wrapper&lt;/code&gt; - ظرف wrapper جستجو&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-search-input&lt;/code&gt; - عنصر ورودی جستجو&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-search-results&lt;/code&gt; - ظرف لیست نتایج جستجو&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;کلاس‌های تو در تو اختیاری مورد استفاده در رابط کاربری جستجو:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-search-title&lt;/code&gt; - عنصر عنوان نتیجه&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-search-active&lt;/code&gt; - لنکر نتیجه فعال&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-search-no-result&lt;/code&gt; - عنصر حالت خالی&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-search-prefix&lt;/code&gt; - برچسب مسیر/پیشوند برای نتایج گروه‌بندی شده&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-search-excerpt&lt;/code&gt; - متن خلاصه نتیجه&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-search-match&lt;/code&gt; - span پرس و جوی هایلایت شده&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;فهرست مطالب&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;فهرست-مطالب&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%81%d9%87%d8%b1%d8%b3%d8%aa-%d9%85%d8%b7%d8%a7%d9%84%d8%a8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-toc&lt;/code&gt; - ظرف فهرست مطالب&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;نوار کناری&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;نوار-کناری&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%86%d9%88%d8%a7%d8%b1-%da%a9%d9%86%d8%a7%d8%b1%db%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-sidebar-container&lt;/code&gt; - ظرف نوار کناری&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-sidebar-active-item&lt;/code&gt; - آیتم فعال در نوار کناری&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;تغییردهنده زبان&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;تغییردهنده-زبان&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%aa%d8%ba%db%8c%db%8c%d8%b1%d8%af%d9%87%d9%86%d8%af%d9%87-%d8%b2%d8%a8%d8%a7%d9%86&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-language-switcher&lt;/code&gt; - دکمه تغییردهنده زبان&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-language-options&lt;/code&gt; - ظرف گزینه‌های زبان&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;تغییردهنده تم&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;تغییردهنده-تم&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%aa%d8%ba%db%8c%db%8c%d8%b1%d8%af%d9%87%d9%86%d8%af%d9%87-%d8%aa%d9%85&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-theme-toggle&lt;/code&gt; - دکمه تغییر تم&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;دکمه کپی کد&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;دکمه-کپی-کد&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%af%da%a9%d9%85%d9%87-%da%a9%d9%be%db%8c-%da%a9%d8%af&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-code-copy-btn-container&lt;/code&gt; - ظرف دکمه کپی کد&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-code-copy-btn&lt;/code&gt; - دکمه کپی کد&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-copy-icon&lt;/code&gt; - عنصر آیکون کپی&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-success-icon&lt;/code&gt; - عنصر آیکون موفقیت&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;بلوک کد&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;بلوک-کد&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%a8%d9%84%d9%88%da%a9-%da%a9%d8%af&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-code-block&lt;/code&gt; - ظرف بلوک کد&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hextra-code-filename&lt;/code&gt; - عنصر نام فایل برای بلوک‌های کد&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;کارت ویژگی&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;کارت-ویژگی&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%da%a9%d8%a7%d8%b1%d8%aa-%d9%88%db%8c%da%98%da%af%db%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-feature-card&lt;/code&gt; - عنصر لینک کارت ویژگی&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;شبکه ویژگی&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;شبکه-ویژگی&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%b4%d8%a8%da%a9%d9%87-%d9%88%db%8c%da%98%da%af%db%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hextra-feature-grid&lt;/code&gt; - ظرف شبکه ویژگی&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;هایلایت سینتکس&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;هایلایت-سینتکس&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d9%87%d8%a7%db%8c%d9%84%d8%a7%db%8c%d8%aa-%d8%b3%db%8c%d9%86%d8%aa%da%a9%d8%b3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;لیست تم‌های هایلایت سینتکس موجود در &lt;a href=&#34;https://xyproto.github.io/splash/docs/all.html&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;گالری استایل‌های Chroma&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt; قابل مشاهده است. برگه استایل را می‌توان با دستور زیر تولید کرد:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo gen chromastyles --style&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;github&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;برای بازنویسی تم پیش‌فرض هایلایت سینتکس، می‌توانیم استایل‌های تولید شده را به فایل CSS سفارشی اضافه کنیم.&lt;/p&gt;
+&lt;h2&gt;اسکریپت‌های سفارشی&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;اسکریپتهای-سفارشی&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%a7%d8%b3%da%a9%d8%b1%db%8c%d9%be%d8%aa%d9%87%d8%a7%db%8c-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4%db%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;می‌توانید اسکریپت‌های سفارشی را به انتهای head برای هر صفحه با افزودن فایل زیر اضافه کنید:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;layouts/_partials/custom/head-end.html&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;بخش اضافی سفارشی در پاورقی&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;بخش-اضافی-سفارشی-در-پاورقی&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%a8%d8%ae%d8%b4-%d8%a7%d8%b6%d8%a7%d9%81%db%8c-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4%db%8c-%d8%af%d8%b1-%d9%be%d8%a7%d9%88%d8%b1%d9%82%db%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;می‌توانید بخش اضافی در پاورقی با ایجاد یک فایل &lt;code&gt;layouts/_partials/custom/footer.html&lt;/code&gt; در سایت خود اضافه کنید.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div class=&#34;hextra-code-filename not-prose&#34; dir=&#34;auto&#34;&gt;layouts/_partials/custom/footer.html&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- عنصر پاورقی شما اینجا --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;بخش اضافه شده قبل از بخش کپی‌رایت در پاورقی اضافه می‌شود.
+می‌توانید از &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HTML&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt; و &lt;a href=&#34;https://gohugo.io/templates/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;سینتکس قالب Hugo&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt; برای افزودن محتوای خود استفاده کنید.&lt;/p&gt;
+&lt;p&gt;متغیرهای Hugo موجود در بخش پاورقی عبارتند از: &lt;code&gt;.switchesVisible&lt;/code&gt; و &lt;code&gt;.displayCopyright&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;چیدمان‌های سفارشی&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;چیدمانهای-سفارشی&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%da%86%db%8c%d8%af%d9%85%d8%a7%d9%86%d9%87%d8%a7%db%8c-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4%db%8c&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;چیدمان‌های تم را می‌توان با ایجاد یک فایل با همان نام در دایرکتوری &lt;code&gt;layouts&lt;/code&gt; سایت خود بازنویسی کرد.
+به عنوان مثال، برای بازنویسی چیدمان &lt;code&gt;single.html&lt;/code&gt; برای مستندات، یک فایل &lt;code&gt;layouts/docs/single.html&lt;/code&gt; در سایت خود ایجاد کنید.&lt;/p&gt;
+&lt;p&gt;برای اطلاعات بیشتر، به &lt;a href=&#34;https://gohugo.io/templates/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;مستندات قالب‌های Hugo&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt; مراجعه کنید.&lt;/p&gt;
+&lt;h2&gt;سفارشی‌سازی بیشتر&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;سفارشیسازی-بیشتر&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%d8%b3%d9%81%d8%a7%d8%b1%d8%b4%db%8c%d8%b3%d8%a7%d8%b2%db%8c-%d8%a8%db%8c%d8%b4%d8%aa%d8%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;آیا آنچه را که به دنبالش بودید پیدا نکردید؟ با خیال راحت &lt;a href=&#34;https://github.com/imfing/hextra/discussions&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;یک بحث باز کنید&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt; یا به تم کمک کنید!&lt;/p&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>سیستم نظرات</title>
+      <link>http://localhost:1313/fa/docs/advanced/comments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/fa/docs/advanced/comments/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Hextra از افزودن سیستم نظرات به سایت شما پشتیبانی می‌کند.
+در حال حاضر &lt;a href=&#34;https://giscus.app/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;giscus&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt; پشتیبانی می‌شود.&lt;/p&gt;
+&lt;h2&gt;giscus&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;giscus&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#giscus&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://giscus.app/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;giscus&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt; یک سیستم نظرات است که توسط &lt;a href=&#34;https://docs.github.com/en/discussions&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Discussions&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt; قدرت می‌گیرد. این سیستم رایگان و متن‌باز است.&lt;/p&gt;
+&lt;p&gt;برای فعال کردن giscus، باید موارد زیر را به فایل پیکربندی سایت اضافه کنید:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div class=&#34;hextra-code-filename not-prose&#34; dir=&#34;auto&#34;&gt;hugo.yaml&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;comments&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;giscus&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;giscus&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;repo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;&amp;lt;repository&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;repoId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;&amp;lt;repository ID&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;category&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;&amp;lt;category&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;categoryId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;&amp;lt;category ID&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;تنظیمات giscus را می‌توان از وبسایت &lt;a href=&#34;https://giscus.app/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;giscus.app&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt; ساخت. جزئیات بیشتر نیز در آنجا موجود است.&lt;/p&gt;
+&lt;p&gt;می‌توان نظرات را برای یک صفحه خاص در front matter صفحه فعال یا غیرفعال کرد:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div class=&#34;hextra-code-filename not-prose&#34; dir=&#34;auto&#34;&gt;content/docs/about.md&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;درباره&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;comments&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;کپی کد&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>
